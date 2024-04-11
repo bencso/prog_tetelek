@@ -1,4 +1,4 @@
-<img src="csharp.jpg"/>
+<img src="image.png"/>
 
 ## Tartalomjegyzék [^1]
 * [Összegzés tétele](#%C3%B6sszegz%C3%A9s-2)
