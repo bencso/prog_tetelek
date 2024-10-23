@@ -14,7 +14,7 @@
 ```csharp
 static void Osszegzes() {
     int[] tomb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int n = 10; //vagy ha változhat a tömb száma használjuk a tomb.Count()-ot
+    int n = 10; //vagy ha változhat a tömb hossza használjuk a tomb.Length-et
     int osszeg = 0;
     for (int i = 0; i < n; i++) osszeg = osszeg + tomb[i]; //vagy osszeg+=tomb[i]
     Console.WriteLine("Végredmény: " + osszeg);
