@@ -163,7 +163,7 @@ static void Kereses() {
 ```csharp
     int? talalat = tomb.FirstOrDefault(x => x == keresett_ertek);
     int index = Array.IndexOf(tomb, talalat.Value);
-    if (talalat.HasValue) {
+    if (talalat.Value > 0) {
         Console.WriteLine("Indexe: {0}", i);
     } else {
         Console.WriteLine("Nincs benne");          
