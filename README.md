@@ -125,6 +125,7 @@ static void Eldontes() {
     }
     if (i < n) {
         vanbenne = true;
+        Console.WriteLine("Van benne");
     } else {
         Console.WriteLine("Nincs benne");
     }
