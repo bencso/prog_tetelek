@@ -22,7 +22,7 @@ static void Osszegzes() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Sum()`
+> *LINQ verzió*: `tomb.Sum()`
 
 
 ## Megszámlálás [^2]
@@ -41,7 +41,7 @@ static void Megszamlalas() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Count(e => e % 2 == 0)`
+> *LINQ verzió*: `tomb.Count(e => e % 2 == 0)`
 
 ## Kiválasztás [^2]
 > Tudjuk, hogy a tömb tartalmazza az adott tulajdonságú elemet, csak azt nem tudjuk, hogy hányadik helyen. Ez az algoritmus megkeresi nekünk, és eredményül az elem sorszámával tér vissza.
@@ -58,7 +58,7 @@ static void Kivalasztas() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `Array.IndexOf(tomb, keresett_ertek)`
+> *LINQ verzió*: `Array.IndexOf(tomb, keresett_ertek)`
 
 ## Maximum/Minimum kiválasztás [^2]
 > Ezzel az algoritmussal egy tömb elemei közül a legnagyobb értékűt tudjuk kiválasztani.
@@ -77,7 +77,7 @@ static void Maximum() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Max()`
+> *LINQ verzió*: `tomb.Max()`
 <br>
 
 > Ezzel az algoritmussal egy tömb elemei közül a legkisebb értékűt tudjuk kiválasztani.
@@ -96,7 +96,7 @@ static void Minimum() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Min()`
+> *LINQ verzió*: `tomb.Min()`
 
 > [!IMPORTANT]
 > Abban
@@ -123,7 +123,7 @@ static void Eldontes() {
 
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Contains(keresett_ertek)`
+> *LINQ verzió*: `tomb.Contains(keresett_ertek)`
 
 ## Keresés [^2]
 > Nem tudjuk, hogy egy adott tulajdonságú 
@@ -144,7 +144,7 @@ static void Kereses() {
 }
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*:
+> *LINQ verzió*:
 ```csharp
 int? talalat = tomb.FirstOrDefault(x => x == keresett_ertek);
 int index = Array.IndexOf(tomb, talalat.Value);
@@ -172,7 +172,7 @@ static void Kivalogatas() {
 }
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `int[] kivalogatott_tomb = eredeti_tomb.Where(x => x % 2 == 0).ToArray();`
+> *LINQ verzió*: `int[] kivalogatott_tomb = eredeti_tomb.Where(x => x % 2 == 0).ToArray();`
 
 [^1]: Sajnos a mobilos applikációban nem működik, az ékezetes betűk miatt
 [^2]: A megjelölt tételek , metódusként vannak megvalósítva
