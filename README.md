@@ -159,7 +159,16 @@ static void Kereses() {
 }
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `tomb.Contains(keresett_ertek)`
+> *C#-ba LINQ verzió*:
+```csharp
+    int? talalat = tomb.FirstOrDefault(x => x == keresett_ertek);
+    int index = Array.IndexOf(tomb, talalat.Value);
+    if (talalat.HasValue) {
+        Console.WriteLine("Indexe: {0}", i);
+    } else {
+        Console.WriteLine("Nincs benne");          
+    }
+```
 
 ## Kiválogatás [^2]
 > Ezzel az algoritmussal egy tömb adott feltételnek megfelelő elemeit kiválogatjuk egy másik tömbbe
