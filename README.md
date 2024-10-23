@@ -24,11 +24,11 @@ static void Osszegzes() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.Sum(x)`
+> *C#-ba LINQ verzió*: `tomb.Sum()`
 
 
 ## Megszámlálás [^2]
-> Az adott tulajdonsággal rendelkező elemek megszámlálása
+> Az adott tulajdonsággal rendelkező elemek megszámlálása.
 ```csharp
 static void Megszamlalas() {
     int[] tomb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -43,7 +43,7 @@ static void Megszamlalas() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.Count(e => e%2==0)`
+> *C#-ba LINQ verzió*: `tomb.Count(e => e % 2 == 0)`
 
 ## Kiválasztás [^2]
 > Tudjuk, hogy a tömb tartalmazza az adott tulajdonságú elemet, csak azt nem tudjuk, hogy hányadik helyen. Ez az algoritmus megkeresi nekünk, és eredményül az elem sorszámával tér vissza.
@@ -62,7 +62,7 @@ static void Kivalasztas() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.indexOf(x)`
+> *C#-ba LINQ verzió*: `Array.IndexOf(tomb, keresett_ertek)`
 
 ## Maximum/Minimum kiválasztás [^2]
 > Ezzel az algoritmussal egy tömb elemei közül a legnagyobb értékűt tudjuk kiválasztani.
@@ -83,7 +83,7 @@ static void Maximum() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.Max(x)`
+> *C#-ba LINQ verzió*: `tomb.Max()`
 <br>
 
 > Ezzel az algoritmussal egy tömb elemei közül a legkisebb értékűt tudjuk kiválasztani.
@@ -104,7 +104,7 @@ static void Minimum() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.Min(x)`
+> *C#-ba LINQ verzió*: `tomb.Min()`
 
 > [!IMPORTANT]
 > Abban
@@ -132,7 +132,7 @@ static void Eldontes() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.includes(x)`<br>*Ez csak logikai értékkel (bool) tér vissza*
+> *C#-ba LINQ verzió*: `tomb.Contains(keresett_ertek)`
 
 ## Keresés [^2]
 > Nem tudjuk, hogy egy adott tulajdonságú 
@@ -161,7 +161,7 @@ static void Kereses() {
 
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `tomb.includes(x)`<br>*Ez csak logikai értékkel (bool) tér vissza*
+> *C#-ba LINQ verzió*: `tomb.Contains(keresett_ertek)`
 
 ## Kiválogatás [^2]
 > Ezzel az algoritmussal egy tömb adott feltételnek megfelelő elemeit kiválogatjuk egy másik tömbbe
@@ -185,7 +185,7 @@ static void Kivalogatas() {
 }
 ```
 > [!TIP]
-> *C#-ba beépített verzió*: `int[] kivalogatott_tomb = a.Where(x => x < 10).ToArray();`
+> *C#-ba LINQ verzió*: `int[] kivalogatott_tomb = a.Where(x => x < 10).ToArray();`
 
 [^1]: Sajnos a mobilos applikációban nem működik, az ékezetes betűk miatt
 [^2]: A megjelölt tételek , metódusként vannak megvalósítva
