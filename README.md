@@ -192,7 +192,7 @@ static void Kivalogatas() {
 }
 ```
 > [!TIP]
-> *C#-ba LINQ verzió*: `int[] kivalogatott_tomb = a.Where(x => x < 10).ToArray();`
+> *C#-ba LINQ verzió*: `int[] kivalogatott_tomb = eredeti_tomb.Where(x => x % 2 == 0).ToArray();`
 
 [^1]: Sajnos a mobilos applikációban nem működik, az ékezetes betűk miatt
 [^2]: A megjelölt tételek , metódusként vannak megvalósítva
