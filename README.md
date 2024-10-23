@@ -180,7 +180,7 @@ static void Kivalogatas() {
     int[] kivalogatott_tomb = new int[n];
     int j = 0;
     for (int i = 0; i < n; i++) {
-        if (eredeti_tomb[i] < 10) {
+        if (eredeti_tomb[i] % 2 == 0) {
             kivalogatott_tomb[j] = eredeti_tomb[i];
             j++;
         }
