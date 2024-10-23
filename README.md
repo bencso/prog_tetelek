@@ -1,5 +1,3 @@
-<img src="image.png"/>
-
 ## Tartalomjegyzék [^1]
 * [Összegzés tétele](#%C3%B6sszegz%C3%A9s-2)
 * [Megszámlálás/megszámolás tétele](#megsz%C3%A1ml%C3%A1l%C3%A1s-2)
