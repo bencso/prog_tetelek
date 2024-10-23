@@ -16,9 +16,7 @@ static void Osszegzes() {
     int[] tomb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int n = 10; //vagy ha változhat a tömb száma használjuk a tomb.Count()-ot
     int osszeg = 0;
-    for (int i = 0; i < n; i++) {
-        osszeg = osszeg + tomb[i]; //vagy osszeg+=tomb[i]
-    }
+    for (int i = 0; i < n; i++) osszeg = osszeg + tomb[i]; //vagy osszeg+=tomb[i]
     Console.WriteLine("Végredmény: " + osszeg);
 }
 
@@ -54,9 +52,7 @@ static void Kivalasztas() {
     int n = tomb.Length;
     int keresett_ertek = 5;
     int i = 0;
-    while (tomb[i] != keresett_ertek) {
-        i++;
-    }
+    while (tomb[i] != keresett_ertek) i++;
     Console.WriteLine("Az 5-ös indexe: {0}", i);
 }
 
@@ -74,9 +70,7 @@ static void Maximum() {
     int max;
     max = tomb[0];
     for (int i = 1; i < n; i++) {
-        if (tomb[i] > max) {
-            max = tomb[i];
-        }
+        if (tomb[i] > max) max = tomb[i];
     }
     Console.WriteLine("A legnagyobb elem: {0}", max);
 }
@@ -95,9 +89,7 @@ static void Minimum() {
     int min;
     min = tomb[0];
     for (int i = 1; i < n; i++) {
-        if (tomb[i] < min) {
-            min = tomb[i];
-        }
+        if (tomb[i] < min) min = tomb[i];
     }
     Console.WriteLine("A legkisebb elem: {0}", min);
 }
@@ -126,9 +118,7 @@ static void Eldontes() {
     if (i < n) {
         vanbenne = true;
         Console.WriteLine("Van benne");
-    } else {
-        Console.WriteLine("Nincs benne");
-    }
+    } else Console.WriteLine("Nincs benne");
 }
 
 ```
@@ -144,30 +134,22 @@ static void Eldontes() {
  nincs.
 ```csharp
 static void Kereses() {
-    int[] tomb = {9, 7, 3, 5, 4, 2, 6, 10, 1};
+    int[] tomb = {9, 7, 8, 3, 5, 4, 2, 6, 10, 1};
     int n = tomb.Length;
     int keresett_ertek = 5; 
     int i = 0;
-    while (i < n && tomb[i] != keresett_ertek) {
-        i++;
-    }
-    if (i < n) {
-        Console.WriteLine("Indexe: {0}", i);
-    } else {
-        Console.WriteLine("Nincs benne");          
-    }
+    while (i < n && tomb[i] != keresett_ertek) i++;
+    if (i < n) Console.WriteLine("Indexe: {0}", i);
+    else Console.WriteLine("Nincs benne");          
 }
 ```
 > [!TIP]
 > *C#-ba LINQ verzió*:
 ```csharp
-    int? talalat = tomb.FirstOrDefault(x => x == keresett_ertek);
-    int index = Array.IndexOf(tomb, talalat.Value);
-    if (talalat.Value > 0) {
-        Console.WriteLine("Indexe: {0}", i);
-    } else {
-        Console.WriteLine("Nincs benne");          
-    }
+int? talalat = tomb.FirstOrDefault(x => x == keresett_ertek);
+int index = Array.IndexOf(tomb, talalat.Value);
+if (talalat.Value > 0) Console.WriteLine("Indexe: {0}", index);
+else Console.WriteLine("Nincs benne");          
 ```
 
 ## Kiválogatás [^2]
@@ -186,9 +168,7 @@ static void Kivalogatas() {
         }
     }
     Console.WriteLine("Kiválogatott elemek:");
-    for (int i = 0; i < j; i++) {
-        Console.Write("{0} ", kivalogatott_tomb[i]);
-    }
+    for (int i = 0; i < j; i++) Console.Write("{0} ", kivalogatott_tomb[i]);
 }
 ```
 > [!TIP]
