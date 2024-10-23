@@ -148,18 +148,15 @@ static void Kereses() {
     int n = tomb.Length;
     int keresett_ertek = 5; 
     int i = 0;
-    bool vanbenne = false;
     while (i < n && tomb[i] != keresett_ertek) {
         i++;
     }
     if (i < n) {
-        vanbenne = true;
         Console.WriteLine("Indexe: {0}", i);
     } else {
         Console.WriteLine("Nincs benne");          
     }
 }
-
 ```
 > [!TIP]
 > *C#-ba LINQ verzió*: `tomb.Contains(keresett_ertek)`
