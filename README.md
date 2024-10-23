@@ -10,7 +10,7 @@
 * [Kiválogatás tétele](#kiv%C3%A1logat%C3%A1s-2)
 
 ## Összegzés [^2]
-> Egy adott N nagyságú (/elemű) számsorozat összegére használt eljárás.
+> Egy adott N nagyságú (vagy elemű) számsorozat összegére használt eljárás.
 ```csharp
 static void Osszegzes() {
     int[] tomb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -26,7 +26,7 @@ static void Osszegzes() {
 
 
 ## Megszámlálás [^2]
-> Az adott tulajdonsággal rendelkező elemek megszámlálása.
+> Az adott tulajdonsággal rendelkező elemek megszámlálása
 ```csharp
 static void Megszamlalas() {
     int[] tomb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -44,7 +44,7 @@ static void Megszamlalas() {
 > *LINQ verzió*: `tomb.Count(e => e % 2 == 0)`
 
 ## Kiválasztás [^2]
-> Tudjuk, hogy a tömb tartalmazza az adott tulajdonságú elemet, csak azt nem tudjuk, hogy hányadik helyen. Ez az algoritmus megkeresi nekünk, és eredményül az elem sorszámával tér vissza.
+>vTudjuk, hogy a tömb tartalmazza a megadott tulajdonságú elemet, csak azt nem tudjuk, hogy hányadik helyen. Ez az algoritmus megkeresi nekünk, és eredményül az elem sorszámával tér vissza.
 
 ```csharp
 static void Kivalasztas() {
@@ -104,7 +104,7 @@ az esetben, ha nem csak egy legnagyobb elem van az adott tömbben, az alg
 sorszámával tér vissza.
 
 ## Eldöntés [^2]
-> Nem tudjuk, hogy egy adott tulajdonságú elem létezik vagy sem a tömbben. Az adott algoritmus, egy logikai értékkel tér vissza. Amennyiben nem található , kiírja az adott szöveget a konzolra.
+> Nem tudjuk, hogy egy adott tulajdonságú elem létezik vagy sem a tömbben. Az algoritmus egy logikai értékkel tér vissza. Amennyiben nem található, kiírja az adott szöveget a konzolra.
 ```csharp
 static void Eldontes() {
     int[] tomb = {9, 7, 3, 5, 4, 2, 6, 10, 1};
@@ -126,12 +126,7 @@ static void Eldontes() {
 > *LINQ verzió*: `tomb.Contains(keresett_ertek)`
 
 ## Keresés [^2]
-> Nem tudjuk, hogy egy adott tulajdonságú 
- elem létezik vagy sem a tömbben. Az adott 
- algoritmus kiírja , hogy ha van benne akkor 
- hanyadik helyen. És visszaad egy 
- értéket (vanbenne), hogy van-e benne vagy 
- nincs.
+> Nem tudjuk, hogy egy adott tulajdonságú elem létezik vagy sem a tömbben. Az algoritmus kiírja, hogy ha van benne, akkor hanyadik helyen található, és visszaad egy logikai értéket (vanbenne), hogy van-e benne vagy nincs.
 ```csharp
 static void Kereses() {
     int[] tomb = {9, 7, 8, 3, 5, 4, 2, 6, 10, 1};
@@ -153,7 +148,7 @@ else Console.WriteLine("Nincs benne");
 ```
 
 ## Kiválogatás [^2]
-> Ezzel az algoritmussal egy tömb adott feltételnek megfelelő elemeit kiválogatjuk egy másik tömbbe
+>  Ezzel az algoritmussal egy tömb adott feltételnek megfelelő elemeit kiválogatjuk egy másik tömbbe.
 
 ```csharp
 static void Kivalogatas() {
